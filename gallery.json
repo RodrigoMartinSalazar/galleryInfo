@@ -1,0 +1,81 @@
+{
+  "telnet_active": true,
+  "content_type": "video",
+  "content_data": {
+    "video": {
+      "url": "https://example.com/video/sample.mp4",
+      "title": "Video de ejemplo",
+      "description": "Descripción del contenido del video",
+      "duration": 120,
+      "format": "mp4",
+      "resolution": "1920x1080",
+      "autoplay": false,
+      "controls": true,
+      "thumbnail": "https://example.com/thumbnails/video-thumb.jpg",
+    },
+    "images": [
+      {
+        "id": 1,
+        "url": "https://example.com/images/image1.jpg",
+        "alt_text": "Descripción de la imagen 1",
+        "title": "Título de la imagen 1",
+        "width": 800,
+        "height": 600,
+        "format": "jpg",
+        "size_kb": 245
+      },
+      {
+        "id": 2,
+        "url": "https://example.com/images/image2.png",
+        "alt_text": "Descripción de la imagen 2",
+        "title": "Título de la imagen 2",
+        "width": 1200,
+        "height": 800,
+        "format": "png",
+        "size_kb": 567
+      }
+    ],
+    "encuesta": {
+      "id": "survey_001",
+      "title": "Encuesta de satisfacción",
+      "description": "Ayúdanos a mejorar nuestro servicio",
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple_choice",
+          "question": "¿Cómo calificarías nuestro servicio?",
+          "required": true,
+          "options": [
+            {"value": "excelente", "text": "Excelente"},
+            {"value": "bueno", "text": "Bueno"},
+            {"value": "regular", "text": "Regular"},
+            {"value": "malo", "text": "Malo"}
+          ]
+        },
+        {
+          "id": "q2",
+          "type": "text",
+          "question": "¿Qué podríamos mejorar?",
+          "required": false,
+          "max_length": 500,
+          "placeholder": "Escribe tu comentario aquí..."
+        },
+        {
+          "id": "q3",
+          "type": "rating",
+          "question": "Califica del 1 al 5",
+          "required": true,
+          "min_value": 1,
+          "max_value": 5,
+          "step": 1
+        }
+      ],
+      "settings": {
+        "anonymous": true,
+        "allow_multiple_responses": false,
+        "expiration_date": "2025-12-31T23:59:59Z",
+        "thank_you_message": "¡Gracias por tu participación!"
+      }
+    }
+  }
+}
