@@ -1,80 +1,107 @@
 {
-  "telnet_active": true,
-  "content_type": "video",
-  "content_data": {
-    "video": {
-      "url": "https://example.com/video/sample.mp4",
-      "title": "Video de ejemplo",
-      "description": "Descripción del contenido del video",
-      "duration": 120,
-      "format": "mp4",
-      "resolution": "1920x1080",
-      "autoplay": false,
-      "controls": true,
-      "thumbnail": "https://example.com/thumbnails/video-thumb.jpg",
-    },
-    "images": [
-      {
-        "id": 1,
-        "url": "https://example.com/images/image1.jpg",
-        "alt_text": "Descripción de la imagen 1",
-        "title": "Título de la imagen 1",
-        "width": 800,
-        "height": 600,
-        "format": "jpg",
-        "size_kb": 245
-      },
-      {
-        "id": 2,
-        "url": "https://example.com/images/image2.png",
-        "alt_text": "Descripción de la imagen 2",
-        "title": "Título de la imagen 2",
-        "width": 1200,
-        "height": 800,
-        "format": "png",
-        "size_kb": 567
+  "version": "1.0.0",
+  "actualizado": "2025-09-05",
+  "servicio_activado": true,
+  "tipo_contenido": "video",
+  "data": {
+    "contenido_video": {
+      "data": {
+        "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        "autoplay": true,
+        "loop_activado": true
       }
-    ],
-    "encuesta": {
-      "id": "survey_001",
-      "title": "Encuesta de satisfacción",
-      "description": "Ayúdanos a mejorar nuestro servicio",
-      "questions": [
+    },
+    "contenido_image": {
+      "slider_activado": true,
+      "slider_tiempo_segundos": 4,
+      "lista_images": [
         {
-          "id": "q1",
-          "type": "multiple_choice",
-          "question": "¿Cómo calificarías nuestro servicio?",
-          "required": true,
-          "options": [
-            {"value": "excelente", "text": "Excelente"},
-            {"value": "bueno", "text": "Bueno"},
-            {"value": "regular", "text": "Regular"},
-            {"value": "malo", "text": "Malo"}
-          ]
+          "id": 1,
+          "url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmx.pinterest.com%2Fgabiarrazate%2Foxxo%2F&psig=AOvVaw3lESS0u4Wq7o6XhzfaluqM&ust=1757458830679000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCKjx1fHWzI8DFQAAAAAdAAAAABAE",
+          "alt_text": "Descripción de la imagen 1",
+          "titulo": "Título de la imagen 1"
         },
         {
-          "id": "q2",
-          "type": "text",
-          "question": "¿Qué podríamos mejorar?",
-          "required": false,
-          "max_length": 500,
-          "placeholder": "Escribe tu comentario aquí..."
+          "id": 2,
+          "url": "https://i.pinimg.com/originals/6e/f8/c3/6ef8c362dfe9ad5469ef154a5cce99ad.jpg",
+          "alt_text": "Descripción de la imagen 2",
+          "titulo": "Título de la imagen 2"
         },
         {
-          "id": "q3",
-          "type": "rating",
-          "question": "Califica del 1 al 5",
-          "required": true,
-          "min_value": 1,
-          "max_value": 5,
-          "step": 1
+          "id": 3,
+          "url": "https://oxxo-com.s3.amazonaws.com/cupones/977a6ca2a2535a33ae315fcd9ae559aa.png",
+          "alt_text": "Descripción de la imagen 2",
+          "titulo": "Título de la imagen 2"
+        },
+        {
+          "id": 4,
+          "url": "https://oxxo-com.s3.amazonaws.com/cupones/a740ccb131cf929c90c54a9dfb911fb4.jpg",
+          "alt_text": "Descripción de la imagen 2",
+          "titulo": "Título de la imagen 2"
+        },
+        {
+          "id": 5,
+          "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkoDnzMW4os2PO0jw8wWK8SixXYA5KEuCgvA&s",
+          "alt_text": "Descripción de la imagen 2",
+          "titulo": "Título de la imagen 2"
         }
-      ],
-      "settings": {
-        "anonymous": true,
-        "allow_multiple_responses": false,
-        "expiration_date": "2025-12-31T23:59:59Z",
-        "thank_you_message": "¡Gracias por tu participación!"
+      ]
+    },
+    "contenido_encuesta": {
+      "encuesta": {
+        "id": "encuesta_001",
+        "titulo": "Encuesta de satisfacción",
+        "descripcion": "Ayúdanos a mejorar nuestro servicio",
+        "lista_preguntas": [
+          {
+            "id": "q1",
+            "tipo_pregunta": "multiple",
+            "pregunta": "¿Cómo calificarías nuestro servicio?",
+            "requerido": true,
+            "opciones": [
+              {
+                "value": "excelente",
+                "text": "Excelente"
+              },
+              {
+                "value": "bueno",
+                "text": "Bueno"
+              },
+              {
+                "value": "regular",
+                "text": "Regular"
+              },
+              {
+                "value": "malo",
+                "text": "Malo"
+              }
+            ]
+          },
+          {
+            "id": "q2",
+            "tipo_pregunta": "text",
+            "pregunta": "¿Qué podríamos mejorar?",
+            "requerido": false,
+            "max_length": 500,
+            "placeholder": "Escribe tu comentario aquí..."
+          },
+          {
+            "id": "q3",
+            "tipo_pregunta": "rating",
+            "pregunta": "Califica del 1 al 5",
+            "requerido": true
+          },
+          {
+            "id": "q4",
+            "tipo_pregunta": "boolean",
+            "requerido": true,
+            "pregunta": "¿Recomendarías este servicio?"
+          }
+        ],
+        "settings": {
+          "anonymous": true,
+          "mensaje_gracias": "¡Gracias por tu participación!"
+        }
       }
     }
   }
