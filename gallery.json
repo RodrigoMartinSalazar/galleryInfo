@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "actualizado": "2025-09-05",
   "servicio_activado": true,
-  "tipo_contenido": "image",
+  "tipo_contenido": "encuesta",
   "data": {
     "contenido_video": {
       "data": {
@@ -20,6 +20,30 @@
           "url": "https://pbs.twimg.com/media/FJ-NNFgWUAMYUo1.jpg",
           "alt_text": "Descripción de la imagen 1",
           "titulo": "Título de la imagen 1"
+        },
+        {
+          "id": 2,
+          "url": "https://i.pinimg.com/originals/6e/f8/c3/6ef8c362dfe9ad5469ef154a5cce99ad.jpg",
+          "alt_text": "Descripción de la imagen 2",
+          "titulo": "Título de la imagen 2"
+        },
+        {
+          "id": 3,
+          "url": "https://oxxo-com.s3.amazonaws.com/cupones/977a6ca2a2535a33ae315fcd9ae559aa.png",
+          "alt_text": "Descripción de la imagen 2",
+          "titulo": "Título de la imagen 2"
+        },
+        {
+          "id": 4,
+          "url": "https://oxxo-com.s3.amazonaws.com/cupones/a740ccb131cf929c90c54a9dfb911fb4.jpg",
+          "alt_text": "Descripción de la imagen 2",
+          "titulo": "Título de la imagen 2"
+        },
+        {
+          "id": 5,
+          "url": "https://www.oxxo.com/assets/conocenos-45anios/IMG__0014_32.png",
+          "alt_text": "Descripción de la imagen 2",
+          "titulo": "Título de la imagen 2"
         }
       ]
     },
