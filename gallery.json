@@ -13,7 +13,7 @@
     },
     "contenido_image": {
       "slider_activado": true,
-      "slider_tiempo_segundos": 4,
+      "slider_tiempo_segundos": 8,
       "lista_images": [
         {
           "id": 1,
