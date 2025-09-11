@@ -5,10 +5,8 @@
   "tipo_contenido": "encuesta",
   "data": {
     "contenido_video": {
-      "data": {
-        "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-        "loop_activado": true
-      }
+      "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "loop_activado": true
     },
     "contenido_image": {
       "slider_tiempo_segundos": 8,
@@ -41,59 +39,57 @@
       ]
     },
     "contenido_encuesta": {
-      "encuesta": {
-        "id": "encuesta_001",
-        "titulo": "Encuesta de satisfacción",
-        "descripcion": "Ayúdanos a mejorar nuestro servicio",
-        "lista_preguntas": [
-          {
-            "id": "q1",
-            "tipo_pregunta": "multiple",
-            "pregunta": "¿Cómo calificarías nuestro servicio?",
-            "requerido": true,
-            "opciones": [
-              {
-                "value": "excelente",
-                "text": "Excelente"
-              },
-              {
-                "value": "bueno",
-                "text": "Bueno"
-              },
-              {
-                "value": "regular",
-                "text": "Regular"
-              },
-              {
-                "value": "malo",
-                "text": "Malo"
-              }
-            ]
-          },
-          {
-            "id": "q2",
-            "tipo_pregunta": "text",
-            "pregunta": "¿Qué podríamos mejorar?",
-            "requerido": false,
-            "placeholder": "Escribe tu comentario aquí..."
-          },
-          {
-            "id": "q3",
-            "tipo_pregunta": "rating",
-            "pregunta": "Califica del 1 al 5",
-            "requerido": true
-          },
-          {
-            "id": "q4",
-            "tipo_pregunta": "boolean",
-            "requerido": true,
-            "pregunta": "¿Recomendarías este servicio?"
-          }
-        ],
-        "settings": {
-          "anonymous": true,
-          "mensaje_gracias": "¡Gracias por tu participación!"
+      "id": "encuesta_001",
+      "titulo": "Encuesta de satisfacción",
+      "descripcion": "Ayúdanos a mejorar nuestro servicio",
+      "lista_preguntas": [
+        {
+          "id": "q1",
+          "tipo_pregunta": "multiple",
+          "pregunta": "¿Cómo calificarías nuestro servicio?",
+          "requerido": true,
+          "opciones": [
+            {
+              "value": "excelente",
+              "text": "Excelente"
+            },
+            {
+              "value": "bueno",
+              "text": "Bueno"
+            },
+            {
+              "value": "regular",
+              "text": "Regular"
+            },
+            {
+              "value": "malo",
+              "text": "Malo"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "tipo_pregunta": "text",
+          "pregunta": "¿Qué podríamos mejorar?",
+          "requerido": false,
+          "placeholder": "Escribe tu comentario aquí..."
+        },
+        {
+          "id": "q3",
+          "tipo_pregunta": "rating",
+          "pregunta": "Califica del 1 al 5",
+          "requerido": true
+        },
+        {
+          "id": "q4",
+          "tipo_pregunta": "boolean",
+          "requerido": true,
+          "pregunta": "¿Recomendarías este servicio?"
         }
+      ],
+      "settings": {
+        "anonymous": true,
+        "mensaje_gracias": "¡Gracias por tu participación!"
       }
     }
   }
