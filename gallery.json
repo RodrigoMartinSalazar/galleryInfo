@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "actualizado": "2025-09-11",
   "servicio_activado": true,
-  "tipo_contenido": "encuesta",
+  "tipo_contenido": "imagen",
   "data": {
     "contenido_video": {
       "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
