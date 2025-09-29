@@ -82,14 +82,15 @@
       }
     }
   },
-  "finish": {
+  "end": {
     "activado": true,
-    "tipo_contenido": "imagen",
+    "tipo_contenido": "encuesta",
     "data": {
       "contenido_encuesta": {
         "id": "encuesta_001",
         "titulo": "Encuesta de satisfacción",
         "descripcion": "Ayúdanos a mejorar nuestro servicio",
+        "tipo_pregunta_default": "multiple",
         "lista_preguntas": [
           {
             "id": "q1",
@@ -136,7 +137,6 @@
           }
         ],
         "settings": {
-          "anonymous": true,
           "mensaje_gracias": "¡Gracias por tu participación!"
         }
       }
