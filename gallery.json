@@ -1,9 +1,35 @@
 {
-  "version": "1.0.0",
-  "actualizado": "2025-09-11",
   "servicio_activado": true,
-  "start": {
-    "activado": true,
+  "banner": {
+    "tipo_contenido": "video",
+    "data": {
+      "contenido_video": {
+        "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        "loop_activado": true
+      },
+      "contenido_image": {
+        "slider_tiempo_segundos": 8,
+        "lista_images": [
+          {
+            "url": "https://pbs.twimg.com/media/FJ-NNFgWUAMYUo1.jpg"
+          },
+          {
+            "url": "https://raw.githubusercontent.com/RodrigoMartinSalazar/galleryInfo/refs/heads/main/Oxxo_baja.jpg"
+          },
+          {
+            "url": "https://oxxo-com.s3.amazonaws.com/cupones/977a6ca2a2535a33ae315fcd9ae559aa.png"
+          },
+          {
+            "url": "https://oxxo-com.s3.amazonaws.com/cupones/a740ccb131cf929c90c54a9dfb911fb4.jpg"
+          },
+          {
+            "url": "https://www.oxxo.com/assets/conocenos-45anios/IMG__0014_32.png"
+          }
+        ]
+      }
+    }
+  },
+  "transaction": {
     "tipo_contenido": "imagen",
     "data": {
       "contenido_video": {
@@ -14,89 +40,36 @@
         "slider_tiempo_segundos": 8,
         "lista_images": [
           {
-            "id": 1,
-            "url": "https://pbs.twimg.com/media/FJ-NNFgWUAMYUo1.jpg",
-            "titulo": "Título de la imagen 1"
+            "url": "https://pbs.twimg.com/media/FJ-NNFgWUAMYUo1.jpg"
           },
           {
-            "id": 2,
-            "url": "https://raw.githubusercontent.com/RodrigoMartinSalazar/galleryInfo/refs/heads/main/Oxxo_baja.jpg",
-            "titulo": "Título de la imagen 2"
+            "url": "https://raw.githubusercontent.com/RodrigoMartinSalazar/galleryInfo/refs/heads/main/Oxxo_baja.jpg"
           },
           {
-            "id": 3,
-            "url": "https://oxxo-com.s3.amazonaws.com/cupones/977a6ca2a2535a33ae315fcd9ae559aa.png",
-            "titulo": "Título de la imagen 3"
+            "url": "https://oxxo-com.s3.amazonaws.com/cupones/977a6ca2a2535a33ae315fcd9ae559aa.png"
           },
           {
-            "id": 4,
-            "url": "https://oxxo-com.s3.amazonaws.com/cupones/a740ccb131cf929c90c54a9dfb911fb4.jpg",
-            "titulo": "Título de la imagen 4"
+            "url": "https://oxxo-com.s3.amazonaws.com/cupones/a740ccb131cf929c90c54a9dfb911fb4.jpg"
           },
           {
-            "id": 5,
-            "url": "https://www.oxxo.com/assets/conocenos-45anios/IMG__0014_32.png",
-            "titulo": "Título de la imagen 5"
+            "url": "https://www.oxxo.com/assets/conocenos-45anios/IMG__0014_32.png"
           }
         ]
       }
     }
   },
-  "medium": {
-    "activado": true,
-    "tipo_contenido": "imagen",
-    "data": {
-      "contenido_video": {
-        "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-        "loop_activado": true
-      },
-      "contenido_image": {
-        "slider_tiempo_segundos": 8,
-        "lista_images": [
-          {
-            "id": 1,
-            "url": "https://pbs.twimg.com/media/FJ-NNFgWUAMYUo1.jpg",
-            "titulo": "Título de la imagen 1"
-          },
-          {
-            "id": 2,
-            "url": "https://raw.githubusercontent.com/RodrigoMartinSalazar/galleryInfo/refs/heads/main/Oxxo_baja.jpg",
-            "titulo": "Título de la imagen 2"
-          },
-          {
-            "id": 3,
-            "url": "https://oxxo-com.s3.amazonaws.com/cupones/977a6ca2a2535a33ae315fcd9ae559aa.png",
-            "titulo": "Título de la imagen 3"
-          },
-          {
-            "id": 4,
-            "url": "https://oxxo-com.s3.amazonaws.com/cupones/a740ccb131cf929c90c54a9dfb911fb4.jpg",
-            "titulo": "Título de la imagen 4"
-          },
-          {
-            "id": 5,
-            "url": "https://www.oxxo.com/assets/conocenos-45anios/IMG__0014_32.png",
-            "titulo": "Título de la imagen 5"
-          }
-        ]
-      }
-    }
-  },
-  "end": {
-    "activado": true,
+  "post_transaction": {
     "tipo_contenido": "encuesta",
     "data": {
       "contenido_encuesta": {
-        "id": "encuesta_001",
         "titulo": "Encuesta de satisfacción",
         "descripcion": "Ayúdanos a mejorar nuestro servicio",
-        "tipo_pregunta_default": "multiple",
+        "tipo_pregunta_default": "",
+        "mensaje_gracias": "¡Gracias por tu participación!",
         "lista_preguntas": [
           {
-            "id": "q1",
             "tipo_pregunta": "multiple",
             "pregunta": "¿Cómo calificarías nuestro servicio?",
-            "requerido": true,
             "opciones": [
               {
                 "value": "excelente",
@@ -117,28 +90,19 @@
             ]
           },
           {
-            "id": "q2",
             "tipo_pregunta": "text",
             "pregunta": "¿Qué podríamos mejorar?",
-            "requerido": false,
             "placeholder": "Escribe tu comentario aquí..."
           },
           {
-            "id": "q3",
             "tipo_pregunta": "rating",
-            "pregunta": "Califica del 1 al 5",
-            "requerido": true
+            "pregunta": "Califica del 1 al 5"
           },
           {
-            "id": "q4",
             "tipo_pregunta": "boolean",
-            "requerido": true,
             "pregunta": "¿Recomendarías este servicio?"
           }
-        ],
-        "settings": {
-          "mensaje_gracias": "¡Gracias por tu participación!"
-        }
+        ]
       }
     }
   }
